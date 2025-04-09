@@ -6,6 +6,7 @@ public class Main {
     static Scanner scanner = new Scanner(System.in);
     static conta conta = new conta(" ", " ");
 
+    static Saldo saldo = new Saldo();
 
     String idUser = conta.getId();
     String senhaUser = conta.getSenha();
@@ -99,5 +100,17 @@ public class Main {
                 break;
         }
         //montar menu de deposito e de transferencia
+    }
+    public static void deposito() {
+        System.out.println("Qual valor deseja depositar?");
+        int valor = scanner.nextInt();
+        if (saldo != null){
+            
+        }
+
+        System.out.println("Valor depositado com sucesso!");
+    }
+    public static void transferencia() {
+
     }
 }
